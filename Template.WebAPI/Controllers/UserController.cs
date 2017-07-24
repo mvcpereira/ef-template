@@ -41,7 +41,7 @@ namespace Template.WebAPI.Controllers
         public void Post([FromBody] UserModel value)
         {
             var userToCreate = new User() { Name = value.name, Email = value.email, Password = value.password };
-            _service.AddNewUser(userToCreate); 
+            _service.AddNewUser(userToCreate);  
         }
 
         // PUT / Update
